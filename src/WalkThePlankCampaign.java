@@ -7,7 +7,14 @@ public class WalkThePlankCampaign extends Core {
 
     private static int easy = 0;
 
-    private static int money = 0;
+    private String difficulty;
+
+    private int level;
+
+    public WalkThePlankCampaign(String difficulty, int level)   {
+        this.difficulty = difficulty;
+        this.level = level;
+    }
 
     public void playCampaign() throws InterruptedException  {
         WordList word = new WordList();

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class WalkThePlankMulti extends Core {
 
-    private static Scanner s = new Scanner(System.in);
+    public static Scanner s = new Scanner(System.in);
 
     public void playMultiPlayer() throws InterruptedException   {
         

@@ -4,6 +4,7 @@ import java.io.InputStream;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineEvent;
 
 public class SoundFeatures {
 
@@ -32,4 +33,25 @@ public class SoundFeatures {
             ex.printStackTrace();
         }
     }
+    public void playAstronaut() {
+        InputStream is = getClass().getResourceAsStream("astronaut.wav");
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new BufferedInputStream(is));
+            Clip clip = AudioSystem.getClip();
+            clip.addLineListener(event -> {
+                if (event.getType() == LineEvent.Type.STOP) {
+                    clip.close();
+                }
+            });
+            clip.open(audioInputStream);
+            clip.start();
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+        }
+        catch (Exception ex)    {
+            System.out.println("Error Playing Audio");
+            ex.printStackTrace();
+        }
+        
+    }
+
 }
