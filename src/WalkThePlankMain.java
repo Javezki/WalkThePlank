@@ -1,25 +1,37 @@
+/*
+Version: 1.0
+Date: 2021-21-05
+Author: Javezki
+Note: First official program I guess? Save and Load is stupid
+*/
+
 
 public class WalkThePlankMain {
 
-    private static String difficulty = "easy";
-    
-    private static int level = 0;
-    public static void main(String[] args) throws Exception {
-        WalkThePlankGUI gui= new WalkThePlankGUI(); 
+    private static String user = "";
+    public static void main(String[] args) throws Exception { 
         WalkThePlankMulti multi = new WalkThePlankMulti();
-        WalkThePlankCampaign camp = new WalkThePlankCampaign("easy", 0);
+        WalkThePlankCampaign camp = new WalkThePlankCampaign("Easy", 0);
         intro();
-        String user = gui.mainGUI();
-        if (userInput(user) == 0) {
-            PrintFeatures.printWithDelay("WIP");
-            camp.playCampaign();
+        user = mainGUI();
+        while (true)    {
+            if (user.equals(""))    {
+                user = mainGUI();
+            }
+            if (userInput(user) == 0) {
+                PrintFeatures.printWithDelay("WIP");
+                camp.playCampaign();
+            }
+            else if (userInput(user) == 1)  {
+                multi.playMultiPlayer();
+            }
+            else {
+                break;
+            }
         }
-        else if (userInput(user) == 1)  {
-            multi.playMultiPlayer();
-        }
-        else if (userInput(user) == 2)  {
-            System.out.println("ERROR");
-        }
+        WalkThePlankMulti.s.close();
+        WalkThePlankCampaign.s.close();
+
     }
 
     public static int userInput(String user) {
@@ -50,7 +62,27 @@ public class WalkThePlankMain {
         for (int i = 0; i < 30; i++)    {
             System.out.println();
         }
-        Thread.sleep(1000);
+        Thread.sleep(2000);
+    }
+
+    public static void setUser(String s)    {
+        user = s;
+    }
+
+    private static String mainGUI() throws InterruptedException {
+        
+        PrintFeatures.printWithDelay("Sup dude");
+        System.out.println();
+        System.out.println();
+        PrintFeatures.printWithDelay("What you tryna play? ");
+        System.out.println();
+        System.out.println("1. Campaign" );
+        System.out.println();
+        System.out.println("2. MultiPlayer");
+        System.out.println();
+        System.out.println("3. Exit");
+        System.out.println();
+        return WalkThePlankMulti.s.nextLine();
     }
 }
 

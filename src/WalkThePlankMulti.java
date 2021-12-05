@@ -38,11 +38,18 @@ public class WalkThePlankMulti extends Core {
             setLostALifeFalse(); //18
         }
         resetGame(); //19
-        PrintFeatures.printWithDelay("yayayayaya"); //20
+        PrintFeatures.printWithDelay("You tryna play multi again?");
+        String user = s.nextLine();
+        if (user.contains("y")) {
+            PrintFeatures.printWithDelay("Alright cool bro");
+        }
+        else    {
+            WalkThePlankMain.setUser("");
+        }
     }
 
     private String getPlayerOneWord() throws InterruptedException   {
-            PrintFeatures.printWithDelay("Whats your word kind sir?");
+            PrintFeatures.printWithDelay("Whats your word?");
             String userWord = s.nextLine().toLowerCase();
             return userWord;
 

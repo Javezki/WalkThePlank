@@ -217,7 +217,7 @@ public class Core {
     }
 
     public static boolean isWinner(int length)    {
-        if  (trackCorrect <= length)   {
+        if  (trackCorrect >= length)   {
             return true;
         }
         else    {

@@ -8,7 +8,7 @@ public class PrintFeatures {
         for (char ch : data.toCharArray())  {
             System.out.print(ch);
             Core.sound.playBlipSound();
-            unit.sleep(20);
+            unit.sleep(50);
         }
         System.out.println();
     }
