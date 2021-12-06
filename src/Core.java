@@ -228,5 +228,25 @@ public class Core {
     public static void setLostALifeFalse()   {
         lostALife = false;
     }
+    public static void displayHangman() {
+        if (LIFE == 5)  {
+            WalkThePlankArt.nothing();
+        }
+        else if (LIFE == 4) {
+            WalkThePlankArt.head();
+        }
+        else if (LIFE == 3) {
+            WalkThePlankArt.body();
+        }
+        else if (LIFE == 2) {
+            WalkThePlankArt.rightArm();
+        }
+        else if (LIFE == 1) {
+            WalkThePlankArt.leftArm();
+        }
+        else if (LIFE == 0) {
+            WalkThePlankArt.leftLeg();
+        }
+    }
 }
 

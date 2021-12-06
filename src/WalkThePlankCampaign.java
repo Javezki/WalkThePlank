@@ -64,6 +64,7 @@ public class WalkThePlankCampaign extends Core {
             System.out.println();
             setLostALifeFalse(); //18
             failures++;
+            displayHangman();
         }
         if (!winner) {
             WalkThePlankMain.setUser("");

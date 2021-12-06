@@ -25,4 +25,108 @@ public class WalkThePlankArt {
         System.out.println("                                     \"Y8bbdP\"                                 ");
         Thread.sleep(delay);
     }
+    public static void nothing() {
+        System.out.println("    ______   ");
+        System.out.println("    |     |  ");
+        System.out.println("    |     |  ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("____________   ");
+      }
+      
+      public static void head() {
+        System.out.println("    ______   ");
+        System.out.println("    |     |  ");
+        System.out.println("    |     |  ");
+        System.out.println("    |    --- ");
+        System.out.println("    |    | | ");
+        System.out.println("    |    --- ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("____________   ");
+      }
+      
+      public static void body() {
+        System.out.println("    ______   ");
+        System.out.println("    |     |  ");
+        System.out.println("    |     |  ");
+        System.out.println("    |    --- ");
+        System.out.println("    |    | | ");
+        System.out.println("    |    --- ");
+        System.out.println("    |     |  ");
+        System.out.println("    |     |  ");
+        System.out.println("    |     |  ");
+        System.out.println("    |        ");
+        System.out.println("    |        ");
+        System.out.println("____________   ");
+      }
+      
+      public static void rightArm() {
+        System.out.println("    ______     ");
+        System.out.println("    |     |    ");
+        System.out.println("    |     |    ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |    | |   ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |     |    ");
+        System.out.println("    |     | \\  ");
+        System.out.println("    |     |  \\ ");
+        System.out.println("    |          ");
+        System.out.println("    |          ");
+        System.out.println("____________   ");
+      }
+      
+      public static void leftArm() {
+        System.out.println("    ______     ");
+        System.out.println("    |     |    ");
+        System.out.println("    |     |    ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |    | |   ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |     |    ");
+        System.out.println("    |   / | \\  ");
+        System.out.println("    |  /  |  \\ ");
+        System.out.println("    |          ");
+        System.out.println("    |          ");
+        System.out.println("____________   ");
+      }
+      
+      public static void rightLeg() {
+        System.out.println("    ______     ");
+        System.out.println("    |     |    ");
+        System.out.println("    |     |    ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |    | |   ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |     |    ");
+        System.out.println("    |   / | \\  ");
+        System.out.println("    |  /  |  \\ ");
+        System.out.println("    |      \\    ");
+        System.out.println("    |       \\  ");
+        System.out.println("____________   ");
+      }
+      
+      public static void leftLeg() {
+        System.out.println("    ______     ");
+        System.out.println("    |     |    ");
+        System.out.println("    |     |    ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |    | |   ");
+        System.out.println("    |    ---   ");
+        System.out.println("    |     |    ");
+        System.out.println("    |   / | \\  ");
+        System.out.println("    |  /  |  \\ ");
+        System.out.println("    |    / \\    ");
+        System.out.println("    |   /   \\  ");
+        System.out.println("____________   ");
+      }
 }

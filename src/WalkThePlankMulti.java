@@ -36,6 +36,7 @@ public class WalkThePlankMulti extends Core {
                 WINNER = isWinner(userWord.length()); //16
             }
             setLostALifeFalse(); //18
+            displayHangman();
         }
         resetGame(); //19
         PrintFeatures.printWithDelay("You tryna play multi again?");
