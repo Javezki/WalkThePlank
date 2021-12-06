@@ -230,22 +230,22 @@ public class Core {
     }
     public static void displayHangman() {
         if (LIFE == 5)  {
-            WalkThePlankArt.nothing();
+            HangmanArt.nothing();
         }
         else if (LIFE == 4) {
-            WalkThePlankArt.head();
+            HangmanArt.head();
         }
         else if (LIFE == 3) {
-            WalkThePlankArt.body();
+            HangmanArt.body();
         }
         else if (LIFE == 2) {
-            WalkThePlankArt.rightArm();
+            HangmanArt.rightArm();
         }
         else if (LIFE == 1) {
-            WalkThePlankArt.leftArm();
+            HangmanArt.leftArm();
         }
         else if (LIFE == 0) {
-            WalkThePlankArt.leftLeg();
+            HangmanArt.leftLeg();
         }
     }
 }

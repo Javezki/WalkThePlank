@@ -1,4 +1,4 @@
-public class WalkThePlankArt {
+public class HangmanArt {
     
     public static void hangmanH()  throws InterruptedException {
 

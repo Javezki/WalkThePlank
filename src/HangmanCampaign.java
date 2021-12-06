@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class WalkThePlankCampaign extends Core {
+public class HangmanCampaign extends Core {
 
     public static Scanner s = new Scanner (System.in);
 
@@ -14,7 +14,7 @@ public class WalkThePlankCampaign extends Core {
 
     private int failures = 0;
 
-    public WalkThePlankCampaign(String difficulty, int level)   {
+    public HangmanCampaign(String difficulty, int level)   {
         this.difficulty = difficulty;
         this.level = level;
     }
@@ -67,7 +67,7 @@ public class WalkThePlankCampaign extends Core {
             displayHangman();
         }
         if (!winner) {
-            WalkThePlankMain.setUser("");
+            HangmanMain.setUser("");
         }
         resetGame();
         checkLevel();

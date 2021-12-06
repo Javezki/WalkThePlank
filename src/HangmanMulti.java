@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WalkThePlankMulti extends Core {
+public class HangmanMulti extends Core {
 
     public static Scanner s = new Scanner(System.in);
 
@@ -45,7 +45,7 @@ public class WalkThePlankMulti extends Core {
             PrintFeatures.printWithDelay("Alright cool bro");
         }
         else    {
-            WalkThePlankMain.setUser("");
+            HangmanMain.setUser("");
         }
     }
 

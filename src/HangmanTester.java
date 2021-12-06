@@ -1,7 +1,7 @@
-public class WalkThePlankTester   {
+public class HangmanTester   {
 
     public static void main(String[] args) throws InterruptedException  {
-        WalkThePlankCampaign camp = new WalkThePlankCampaign("Easy", 0);
+        HangmanCampaign camp = new HangmanCampaign("Easy", 0);
         camp.playCampaign();
     }
 }

@@ -6,12 +6,12 @@ Note: First official program I guess? Save and Load is stupid
 */
 
 
-public class WalkThePlankMain {
+public class HangmanMain {
 
     private static String user = "";
     public static void main(String[] args) throws Exception { 
-        WalkThePlankMulti multi = new WalkThePlankMulti();
-        WalkThePlankCampaign camp = new WalkThePlankCampaign("Easy", 0);
+        HangmanMulti multi = new HangmanMulti();
+        HangmanCampaign camp = new HangmanCampaign("Easy", 0);
         intro();
         user = mainGUI();
         while (true)    {
@@ -29,8 +29,8 @@ public class WalkThePlankMain {
                 break;
             }
         }
-        WalkThePlankMulti.s.close();
-        WalkThePlankCampaign.s.close();
+        HangmanMulti.s.close();
+        HangmanCampaign.s.close();
 
     }
 
@@ -58,7 +58,7 @@ public class WalkThePlankMain {
         for (int i = 0; i < 30; i++)    {
             System.out.println();
         }
-        WalkThePlankArt.hangmanH();
+        HangmanArt.hangmanH();
         for (int i = 0; i < 30; i++)    {
             System.out.println();
         }
@@ -82,7 +82,7 @@ public class WalkThePlankMain {
         System.out.println();
         System.out.println("3. Exit");
         System.out.println();
-        return WalkThePlankMulti.s.nextLine();
+        return HangmanMulti.s.nextLine();
     }
 }
 
